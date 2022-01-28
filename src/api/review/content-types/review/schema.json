@@ -4,7 +4,8 @@
   "info": {
     "singularName": "review",
     "pluralName": "reviews",
-    "displayName": "review"
+    "displayName": "review",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,15 @@
     "Text": {
       "type": "richtext",
       "required": true
+    },
+    "media_thumbnail": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
