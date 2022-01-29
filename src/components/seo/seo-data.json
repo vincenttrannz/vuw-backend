@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_seo_seo_data",
+  "info": {
+    "displayName": "SeoData",
+    "icon": "laptop-code"
+  },
+  "options": {},
+  "attributes": {
+    "MetaTitle": {
+      "type": "string"
+    },
+    "MetaDescription": {
+      "type": "text"
+    },
+    "ShareImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

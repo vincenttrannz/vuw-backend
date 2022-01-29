@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "About",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "AboutTitle": {
+      "type": "string"
+    },
+    "AboutShortDescription": {
+      "type": "text"
+    },
+    "SeoData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo-data"
+    }
+  }
+}
