@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "singularName": "student",
+    "pluralName": "students",
+    "displayName": "student"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "StudentName": {
+      "type": "string",
+      "required": true
+    },
+    "StudentShortDetail": {
+      "type": "text"
+    },
+    "StudentRichDetail": {
+      "type": "richtext"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project",
+      "mappedBy": "student"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ProjectTitle": {
+      "type": "string",
+      "required": true
+    },
+    "ProjectDescription": {
+      "type": "richtext",
+      "required": true
+    },
+    "LecturerName": {
+      "type": "string"
+    },
+    "CourseName": {
+      "type": "string",
+      "required": true
+    },
+    "ProjectDate": {
+      "type": "date"
+    },
+    "ProjectExternalLink": {
+      "type": "string"
+    },
+    "ProjectLinkDisplay": {
+      "type": "string"
+    },
+    "ImagesCarousel": {
+      "type": "boolean"
+    },
+    "ProjectImages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "Project3D": {
+      "type": "boolean"
+    },
+    "Project3DLink": {
+      "type": "string"
+    },
+    "SeoData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo-data"
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student",
+      "inversedBy": "projects"
+    },
+    "ProjectThumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "Slug": {
+      "type": "string",
+      "required": false
+    }
+  }
+}
