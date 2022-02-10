@@ -79,6 +79,25 @@
     "Slug": {
       "type": "string",
       "required": false
+    },
+    "ProjectPDF": {
+      "type": "boolean"
+    },
+    "ProjectPDFLink": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "ProjectCode": {
+      "type": "boolean"
+    },
+    "ProjectCodeLink": {
+      "type": "string"
     }
   }
 }
