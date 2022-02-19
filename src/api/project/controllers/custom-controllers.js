@@ -3,7 +3,14 @@
  *  project controller
  */
 
-// const { createCoreController } = require('@strapi/strapi').factories;
+const { createCoreController } = require('@strapi/strapi').factories;
+
+module.exports = createCoreController('api::project.project', ({strapi}) => ({
+  async find(ctx){
+    return strapi.query('project').find(ctx.query, ['student', 'level']);
+  }
+}));
+
 
 // module.exports = createCoreController('api::project.project', ({ strapi }) => ({
 //   async findOne(ctx) {
@@ -19,8 +26,4 @@
 //     return this.transformResponse(results[0]);
 //   }
 // }));
-
-
 // const { createCoreController } = require('@strapi/strapi').factories;
-
-// module.exports = createCoreController('api::project.project');

@@ -98,6 +98,24 @@
     },
     "ProjectCodeLink": {
       "type": "string"
+    },
+    "level": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::level.level",
+      "inversedBy": "projects"
+    },
+    "major": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::major.major",
+      "inversedBy": "project"
+    },
+    "school": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::school.school",
+      "inversedBy": "projects"
     }
   }
 }

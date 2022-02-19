@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "majors",
+  "info": {
+    "singularName": "major",
+    "pluralName": "majors",
+    "displayName": "major",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "MajorName": {
+      "type": "string",
+      "required": true
+    },
+    "school": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::school.school",
+      "inversedBy": "majors"
+    },
+    "project": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project.project",
+      "inversedBy": "major"
+    }
+  }
+}
