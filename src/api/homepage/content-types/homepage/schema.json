@@ -31,13 +31,16 @@
     "Quick_intro_te_reo": {
       "type": "string"
     },
-    "Quick_intro_text_field": {
-      "type": "richtext"
-    },
     "SeoData": {
       "type": "component",
       "repeatable": false,
       "component": "seo.seo-data"
+    },
+    "Quick_intro_text_column_one": {
+      "type": "text"
+    },
+    "Quick_intro_text_column_two": {
+      "type": "text"
     }
   }
 }
