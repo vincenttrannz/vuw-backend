@@ -107,9 +107,9 @@
     },
     "major": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::major.major",
-      "inversedBy": "project"
+      "inversedBy": "projects"
     },
     "school": {
       "type": "relation",

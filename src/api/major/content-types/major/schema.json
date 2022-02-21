@@ -22,11 +22,14 @@
       "target": "api::school.school",
       "inversedBy": "majors"
     },
-    "project": {
+    "projects": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::project.project",
-      "inversedBy": "major"
+      "mappedBy": "major"
+    },
+    "MajorTeReo": {
+      "type": "string"
     }
   }
 }
