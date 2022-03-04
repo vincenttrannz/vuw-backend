@@ -116,6 +116,12 @@
       "relation": "manyToOne",
       "target": "api::school.school",
       "inversedBy": "projects"
+    },
+    "award": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::award.award",
+      "inversedBy": "projects"
     }
   }
 }

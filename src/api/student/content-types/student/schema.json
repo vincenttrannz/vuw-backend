@@ -26,6 +26,12 @@
       "relation": "oneToMany",
       "target": "api::project.project",
       "mappedBy": "student"
+    },
+    "award": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::award.award",
+      "inversedBy": "students"
     }
   }
 }
