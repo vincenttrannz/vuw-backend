@@ -22,9 +22,6 @@
         "videos"
       ]
     },
-    "Hero_title": {
-      "type": "string"
-    },
     "quick_intro_title": {
       "type": "string"
     },

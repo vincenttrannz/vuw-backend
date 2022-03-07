@@ -15,6 +15,29 @@
       "type": "string",
       "required": true
     },
+    "AwardType": {
+      "type": "enumeration",
+      "enum": [
+        "Excellence_Award",
+        "Industry_Award"
+      ],
+      "required": true
+    },
+    "CompanyName": {
+      "type": "string"
+    },
+    "CompanyLink": {
+      "type": "string"
+    },
+    "CompanyLogo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
     "students": {
       "type": "relation",
       "relation": "oneToMany",

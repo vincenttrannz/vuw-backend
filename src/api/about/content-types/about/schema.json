@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "AboutTitle": {
-      "type": "string"
-    },
     "AboutShortDescription": {
       "type": "text"
     },
