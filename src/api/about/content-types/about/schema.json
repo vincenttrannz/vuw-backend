@@ -19,6 +19,47 @@
       "type": "component",
       "repeatable": false,
       "component": "seo.seo-data"
+    },
+    "AboutHeroBanner": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "AboutPageInfoBlock": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-component.two-columns-block"
+    },
+    "FirstContentGreyBlock": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-component.grey-content-block"
+    },
+    "ArchitectureSchool": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-component.two-columns-block"
+    },
+    "SecondContentGreyBlock": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-component.grey-content-block"
+    },
+    "DesignSchool": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-component.two-columns-block"
+    },
+    "ThirdContentGreyBlock": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-component.grey-content-block"
+    },
+    "SchoolVideo": {
+      "type": "string"
     }
   }
 }

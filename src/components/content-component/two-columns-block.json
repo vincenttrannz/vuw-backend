@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_content_component_two_columns_blocks",
+  "info": {
+    "displayName": "TwoColumnsBlock",
+    "icon": "money-check"
+  },
+  "options": {},
+  "attributes": {
+    "BlockTitle": {
+      "type": "string"
+    },
+    "BlockParagraph": {
+      "type": "text"
+    },
+    "BlockImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
