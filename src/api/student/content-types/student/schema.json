@@ -16,9 +16,6 @@
       "type": "string",
       "required": true
     },
-    "StudentShortDetail": {
-      "type": "text"
-    },
     "projects": {
       "type": "relation",
       "relation": "oneToMany",
@@ -30,6 +27,32 @@
       "relation": "manyToOne",
       "target": "api::award.award",
       "inversedBy": "students"
+    },
+    "StudentShortDetail": {
+      "type": "richtext"
+    },
+    "major": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::major.major"
+    },
+    "StudentMinor": {
+      "type": "string"
+    },
+    "StudentEmail": {
+      "type": "email"
+    },
+    "FirstStudentLink": {
+      "type": "string"
+    },
+    "SecondStudentLink": {
+      "type": "string"
+    },
+    "ThirdStudentLink": {
+      "type": "string"
+    },
+    "FourthStudentLink": {
+      "type": "string"
     }
   }
 }

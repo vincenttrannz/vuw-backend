@@ -4,7 +4,8 @@
   "info": {
     "singularName": "award",
     "pluralName": "awards",
-    "displayName": "award"
+    "displayName": "award",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -30,13 +31,14 @@
       "type": "string"
     },
     "CompanyLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "students": {
       "type": "relation",
@@ -49,6 +51,9 @@
       "relation": "oneToMany",
       "target": "api::project.project",
       "mappedBy": "award"
+    },
+    "CompanyAwardDescription": {
+      "type": "string"
     }
   }
 }

@@ -28,7 +28,8 @@
       "required": true
     },
     "ProjectDate": {
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "ProjectExternalLink": {
       "type": "string"
@@ -69,7 +70,7 @@
     "ProjectThumbnail": {
       "type": "media",
       "multiple": false,
-      "required": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
