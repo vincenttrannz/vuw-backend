@@ -1,0 +1,95 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "event",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "EventName": {
+      "type": "string",
+      "required": true
+    },
+    "EventShortDescription": {
+      "type": "text",
+      "required": true
+    },
+    "EventLocation": {
+      "type": "string"
+    },
+    "EventPrice": {
+      "type": "string"
+    },
+    "EventType": {
+      "type": "enumeration",
+      "enum": [
+        "Private",
+        "Public"
+      ],
+      "required": true
+    },
+    "EventCategory": {
+      "type": "enumeration",
+      "enum": [
+        "Orientation_week",
+        "Mihi_Whakatau",
+        "EOYE",
+        "Graduation",
+        "Exhibitions",
+        "Crit_Week",
+        "Off_campus_event"
+      ],
+      "required": true
+    },
+    "EventStartDate": {
+      "type": "date",
+      "required": true
+    },
+    "EventFinishDate": {
+      "type": "date",
+      "required": false
+    },
+    "EventTime": {
+      "type": "time",
+      "required": true
+    },
+    "EventImageThumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "EventRichDescription": {
+      "type": "richtext",
+      "required": true
+    },
+    "EventVideoLink": {
+      "type": "string"
+    },
+    "EventPhotoGallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project"
+    }
+  }
+}
