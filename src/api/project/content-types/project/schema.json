@@ -123,6 +123,9 @@
       "relation": "manyToOne",
       "target": "api::award.award",
       "inversedBy": "projects"
+    },
+    "ProjectTags": {
+      "type": "string"
     }
   }
 }
