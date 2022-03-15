@@ -126,6 +126,24 @@
     },
     "ProjectTags": {
       "type": "string"
+    },
+    "DownloadLinkOne": {
+      "type": "string"
+    },
+    "DownloadLinkTwo": {
+      "type": "string"
+    },
+    "DownloadLinkOneNameDisplay": {
+      "type": "string"
+    },
+    "DownloadLinkTwoNameDisplay": {
+      "type": "string"
+    },
+    "LicensingLink": {
+      "type": "string"
+    },
+    "LicensingNameDisplay": {
+      "type": "string"
     }
   }
 }
