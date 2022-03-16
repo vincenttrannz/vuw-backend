@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_project_project_videos",
+  "info": {
+    "displayName": "ProjectVideo",
+    "icon": "play",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ProjectVideoLink": {
+      "type": "string",
+      "required": true
+    },
+    "ProjectCaption": {
+      "type": "string"
+    }
+  }
+}

@@ -38,7 +38,8 @@
       "type": "string"
     },
     "ImagesCarousel": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "ProjectImages": {
       "type": "media",
@@ -51,7 +52,8 @@
       ]
     },
     "Project3D": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "Project3DLink": {
       "type": "string"
@@ -82,7 +84,8 @@
       "required": false
     },
     "ProjectPDF": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "ProjectPDFLink": {
       "type": "media",
@@ -95,7 +98,8 @@
       ]
     },
     "ProjectCode": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "ProjectCodeLink": {
       "type": "string"
@@ -143,6 +147,42 @@
       "type": "string"
     },
     "LicensingNameDisplay": {
+      "type": "string"
+    },
+    "ProjectVideo": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "ProjectVideoLink": {
+      "type": "string"
+    },
+    "SubProjectCarousel": {
+      "type": "component",
+      "repeatable": false,
+      "component": "project.project-carousel"
+    },
+    "SubProject3D": {
+      "type": "component",
+      "repeatable": false,
+      "component": "project.project3-d"
+    },
+    "SubProjectPDF": {
+      "type": "component",
+      "repeatable": false,
+      "component": "project.project-pdf"
+    },
+    "SubProjectVideo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "project.project-video"
+    },
+    "SubProjectCode": {
+      "type": "component",
+      "repeatable": false,
+      "component": "project.project-code"
+    },
+    "ProjectCaption": {
       "type": "string"
     }
   }

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_project_project_codes",
+  "info": {
+    "displayName": "ProjectCode",
+    "icon": "code",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ProjectCodeLink": {
+      "type": "string",
+      "required": true
+    },
+    "ProjectCaption": {
+      "type": "string"
+    }
+  }
+}

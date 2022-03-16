@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_project_project3_ds",
+  "info": {
+    "displayName": "Project3D",
+    "icon": "rocket",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Project3DLink": {
+      "type": "string",
+      "required": true
+    },
+    "ProjectCaption": {
+      "type": "string"
+    }
+  }
+}

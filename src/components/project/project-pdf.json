@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_project_project_pdfs",
+  "info": {
+    "displayName": "ProjectPDF",
+    "icon": "copy",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ProjectPDFLink": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "ProjectCaption": {
+      "type": "string"
+    }
+  }
+}
