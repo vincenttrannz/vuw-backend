@@ -26,14 +26,6 @@
     "EventPrice": {
       "type": "string"
     },
-    "EventType": {
-      "type": "enumeration",
-      "enum": [
-        "Private",
-        "Public"
-      ],
-      "required": true
-    },
     "EventStartDate": {
       "type": "date",
       "required": true
@@ -95,7 +87,27 @@
       ],
       "required": true
     },
-    "EventLink": {
+    "EventFirstLink": {
+      "type": "string"
+    },
+    "event_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::event-type.event-type",
+      "inversedBy": "events"
+    },
+    "SeoData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo-data"
+    },
+    "Slug": {
+      "type": "string"
+    },
+    "EventSecondLink": {
+      "type": "string"
+    },
+    "EventThirdLink": {
       "type": "string"
     }
   }
