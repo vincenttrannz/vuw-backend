@@ -2,18 +2,18 @@
   "collectionName": "components_project_project_carousels",
   "info": {
     "displayName": "ProjectCarousel",
-    "icon": "parking"
+    "icon": "parking",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "ProjectImages": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
       "type": "media",
-      "multiple": true
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }
