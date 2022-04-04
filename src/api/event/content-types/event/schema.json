@@ -21,7 +21,8 @@
       "required": true
     },
     "EventLocation": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "EventPrice": {
       "type": "string"
@@ -43,9 +44,7 @@
       "multiple": false,
       "required": true,
       "allowedTypes": [
-        "images",
-        "files",
-        "videos"
+        "images"
       ]
     },
     "EventRichDescription": {
