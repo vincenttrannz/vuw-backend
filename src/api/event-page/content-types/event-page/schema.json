@@ -33,6 +33,9 @@
       "type": "component",
       "repeatable": false,
       "component": "seo.seo-data"
+    },
+    "QuickIntroSubtitle": {
+      "type": "string"
     }
   }
 }
