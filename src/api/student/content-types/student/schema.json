@@ -29,7 +29,8 @@
       "inversedBy": "students"
     },
     "StudentShortDetail": {
-      "type": "richtext"
+      "type": "richtext",
+      "maxLength": 235
     },
     "major": {
       "type": "relation",
