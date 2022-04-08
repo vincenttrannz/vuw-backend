@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "privacies",
+  "info": {
+    "singularName": "privacy",
+    "pluralName": "privacies",
+    "displayName": "Privacy",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "HeroBanner": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "ContentBlock": {
+      "type": "richtext",
+      "required": true
+    },
+    "SeoData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo-data"
+    }
+  }
+}
