@@ -18,7 +18,8 @@
     },
     "EventShortDescription": {
       "type": "text",
-      "required": true
+      "required": true,
+      "maxLength": 400
     },
     "EventLocation": {
       "type": "string",
@@ -62,9 +63,9 @@
     "EventEndTime": {
       "type": "time"
     },
-    "event_category": {
+    "event_categories": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::event-category.event-category",
       "inversedBy": "events"
     },
