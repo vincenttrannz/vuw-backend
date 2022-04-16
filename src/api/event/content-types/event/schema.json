@@ -107,6 +107,9 @@
     },
     "EventCalendarDescription": {
       "type": "text"
+    },
+    "EventGoogleLocation": {
+      "type": "string"
     }
   }
 }

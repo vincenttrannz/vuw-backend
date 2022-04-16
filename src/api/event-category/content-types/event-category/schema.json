@@ -19,7 +19,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::event.event",
-      "inversedBy": "event_categories"
+      "mappedBy": "event_categories"
     }
   }
 }
