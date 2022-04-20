@@ -38,7 +38,7 @@
     },
     "EventStartTime": {
       "type": "time",
-      "required": true
+      "required": false
     },
     "EventImageThumbnail": {
       "type": "media",
