@@ -29,6 +29,22 @@
       "type": "component",
       "repeatable": false,
       "component": "seo.seo-data"
+    },
+    "DisplayPhone": {
+      "type": "boolean",
+      "default": true
+    },
+    "ContactLink": {
+      "type": "string",
+      "required": true
+    },
+    "EnrolLink": {
+      "type": "string",
+      "required": true
+    },
+    "PhoneNumber": {
+      "type": "string",
+      "required": true
     }
   }
 }
